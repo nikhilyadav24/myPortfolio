@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid red 1px;
+}
+html body{
+    /* width: 100vw;
+    height: 100vh; */
+    /* overflow: hidden; */
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 180vh;
+    overflow: hidden;
+}
+.container2{
+    width: 100vw;
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    z-index: 4;
+}
+nav div{
+    display: flex;
+    padding: 1em;
+    gap: 6em;
+}
+nav div a{
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    font-family: 'Mulish';
+    font-size: 18px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 12em 0 12em;
+}
+.header .h1{
+    color: white;
+    font-family: "Coign Pro 47 Bold";
+    position: relative;
+    font-size: 42vw;
+}
+
+.belowtext{
+    display: flex;
+    text-transform: uppercase;
+    /* justify-content: flex-end; */
+    /* margin-right: 10%; */
+    position: absolute;
+    top: 74vh;
+    left: 70%;
+
+}
+.belowtext h1{
+    font-family: "Mulish";
+    font-size: 20px;
+    
+}
+.belowtext img{
+    height: 60px;
+    width: 60px;
+    color: white;
+}
+
+.hero{
+    position: relative;
+    width: calc(90vw - 3em);
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    /* border-radius: 10px; */
+    /* border: 4px solid white; */
+}
+.hero img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.hero h1{
+    color: white;
+    font-family: "Mulish";
+    font-size: 32px;
+    position: absolute;
+    top: 25vh;
+    left: 16px;
+    width: 70%;
+    text-align: left;
+    margin-left: 10%;
+
+
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    z-index: 6;
+}
+.bar{
+    width: 20vw;
+    height: 105vh;
+    background-color: white;
+}
+.counter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 10000;
+    padding: 0.2em 0.4em;
+    font-size: 15vw;
+    font-family: "Coign Pro 47 Bold";
+    color: black;
+}
+
+
+
+.wrap{
+    width:100%; 
+    height:20vh; 
+    /* max-width:768px;  */
+    background-color:transparent; 
+    margin:0 auto; 
+    padding:20px; 
+    padding-top:60px;
+}
+
+/* .sp{
+    width:100%; 
+    height:100vh; 
+    background-color:teal; 
+    margin:0 auto; 
+    text-align:center; 
+    font-family: arial, helvetica; 
+    font-size:30px; 
+    color:#ffffff; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;} */
+
+.quote {
+    margin-top:0px; 
+    font-family: 'Mulish'; 
+    font-style: bold;
+    font-size:60px; 
+    color:#ffffff; 
+    line-height:76px; 
+    text-align:center; 
+    overflow:hidden; 
+    /* height:100vh;  */
+}
+
+.split-line {
+  overflow: hidden;
+}
+
+
+
+/*  */
+
+body{
+    color: white;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 85%;
+    border-left: 3px solid #fefefe;
+    padding: 25px;
+    margin: 0;
+    color: white;
+}
+
+h2 span { 
+    display: block; 
+}
+
+h3 {
+    font-size: 20px;
+    font-stretch: expanded;
+    color: #ffffff;
+    line-height: 100%;
+}
+
+h2,h3,h4 {text-transform: uppercase;}
+
+.containerr {
+    width: 95%;
+    margin: auto;
+}
+
+section {padding: 50px 0;}
+
+.col {
+    width: 50%;
+}
+
+#vertical {
+    height: 130vh;
+    width: 100vw;
+    padding-top:150px;
+}
+
+.vertical__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.vertical__content .col_left {height: 100%;}
+
+.vertical__content .col.col_right {
+    width: 40%;
+}
+
+.vertical__item:not(:last-child) {
+    margin-bottom: 240px;
+}
+
+#horizontal {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 200px;
+}
+
+.horizontal__content {
+    display: flex;
+    margin-left: 200px;
+}
+
+.horizontal__item {
+    border: 1px solid #efefef;
+    /* padding: 300px 400px 300px 400px; */
+    /* height: 400px; */
+
+}
+.horizontal__item {
+    margin-left: 50px;
+}
+
+/* .horizontal__num {
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: #ff98a2;
+} */
+
+.horizontal__item img{
+    height: 60vh;
+    width: 60vw;
+}
+
+.container4{
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+}
+.spacer{
+    height: 800px;
+}
+.marquee{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 30px 0;
+    font-weight: 800;
+    font-size: 60px;
+    font-family: "Russo One";
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 0px 0 0 0px;
+}
+.marquee_inner{
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
+}
+.marquee_part{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 4px;
+}
+.arrow{
+    width: 60px;
+    height: 80px;
+    margin-top: 5%;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin: 1e 1e; */
+    /* transform: rotete(90deg);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+/* .arrow.active{
+    transform: rotateX(90deg);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+.color{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.color h1{
+    font-size: 190px;
+    font-family: "Coign Pro 47 Bold";
+
+}
+
+  
