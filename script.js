@@ -87,6 +87,19 @@ gsap.from(".quote", {
       stagger: 0.02,
       opacity:0,
     });
+gsap.from(".quote1", {
+    scrollTrigger: {
+        trigger: ".quote1",
+        toggleActions: "restart pause resume reverse",
+        start: "top 60%",
+        // markers:true,
+      },
+      duration: 0.6, 
+      ease: "circ.out", 
+      y: 80, 
+      stagger: 0.02,
+      opacity:0,
+    });
 
 
 
@@ -188,3 +201,34 @@ let tween = gsap
     });
 
 
+    var cursor = document.querySelector('.cursor'),
+        cursorScale = document.querySelectorAll('.cursor-scale'),
+        mouseX = 0,
+        mouseY = 0
+
+    gsap.to({}, 0.001, {
+        repeat: -1,
+        
+        onRepeat: function () {
+            gsap.set(cursor, {
+                
+                css: {
+                    left: mouseX - 15,
+                    top: mouseY - 15
+                }
+            })
+        }
+    });
+    window.addEventListener("mousemove", function (e) {
+        mouseX = e.clientX ;
+        mouseY = e.clientY ;
+    });
+
+    // $(document).ready(function(){
+    //     $(".hover-this").hover(function(){
+    //       $(".cursor").css("transform", "translate(-50%, -50%) scale(8)");
+    //       }, function(){
+    //       $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
+    //     });
+    //   });
+ 
