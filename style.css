@@ -45,6 +45,7 @@ nav div a{
     font-size: 18px;
 }
 
+
 .header{
     width: 100%;
     display: flex;
@@ -366,8 +367,11 @@ body:hover > .cursor{
     opacity:1;
     
 }
-.button:hover ~ .cursor{
+span:hover > .cursor{
     transform:translate(-50%,-50%) scale(2);
 }
+/* .button:hover{
+    transform: scale(0.5);
+} */
 
 
