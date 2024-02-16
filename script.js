@@ -198,7 +198,7 @@ let tween = gsap
           trigger: elem,
           start:'top 50%',
           end:'bottom 50%',
-          onEnter: () => gsap.to('.color', {backgroundColor:'#5691f0'}),
+          onEnter: () => gsap.to('.color', {backgroundColor:'#cedcee',background:""}),
           onLeaveBack: () => gsap.to('.color', {backgroundColor:color}), 
         //   markers:true,
           duration:4,
