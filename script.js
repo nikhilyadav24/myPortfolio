@@ -23,8 +23,13 @@ startLoader();
 
 
 gsap.to(".counter" , 0.25 , {
-    delay:3,
+    delay:4,
     opacity:0,
+    height :0,
+});
+gsap.to(".overlay" , 0.25 , {
+    delay:4.5,
+    height :0,
 });
 
 gsap.to(".bar" , 0.4 , {
@@ -224,11 +229,11 @@ let tween = gsap
         mouseY = e.clientY ;
     });
 
-    // $(document).ready(function(){
-    //     $(".hover-this").hover(function(){
-    //       $(".cursor").css("transform", "translate(-50%, -50%) scale(8)");
-    //       }, function(){
-    //       $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
-    //     });
-    //   });
+    $(document).ready(function(){
+        $(".hover-this").hover(function(){
+          $(".cursor").css("transform", "translate(-50%, -50%) scale(8)");
+          }, function(){
+          $(".cursor").css("transform", "translate(-50%, -50%) scale(1)");
+        });
+      });
  

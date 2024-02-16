@@ -8,10 +8,33 @@
     /* border: solid red 1px; */
     cursor: none;
 }
+.cursor{
+    height: 30px;
+    width:30px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    z-index: 100000;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform .3s ease;
+
+}
+body:hover > .cursor{
+    opacity:1;
+    
+}
+/* section:hover > .cursor{
+    transform:translate(-50%,-50%) scale(3);
+} */
+/* .button:hover{
+    transform: scale(0.5);
+} */
+
 html body{
-    /* width: 100vw;
-    height: 100vh; */
-    /* overflow: hidden; */
     background-color: black;
 }
 .container{
@@ -41,10 +64,12 @@ nav div{
 nav div a{
     text-decoration: none;
     color: rgb(209, 209, 209);
-    font-family: 'Mulish';
-    font-size: 18px;
+    font-family:  'Mulish';
+    font-size: 22px;
 }
-
+nav div a:hover{
+    transform: scale(0.95);
+}
 
 .header{
     width: 100%;
@@ -62,8 +87,6 @@ nav div a{
 .belowtext{
     display: flex;
     text-transform: uppercase;
-    /* justify-content: flex-end; */
-    /* margin-right: 10%; */
     position: absolute;
     top: 74vh;
     left: 70%;
@@ -96,7 +119,7 @@ nav div a{
     object-fit: cover;
 }
 .hero h1{
-    color: white;
+    color: black;
     font-family: "Mulish";
     font-size: 32px;
     position: absolute;
@@ -136,7 +159,7 @@ nav div a{
     justify-content: flex-end;
     align-items: flex-end;
     z-index: 10000;
-    padding: 0.2em 0.4em;
+    /* padding: 0.2em 0.4em; */
     font-size: 15vw;
     font-family: "Coign Pro 47 Bold";
     color: black;
@@ -155,18 +178,6 @@ nav div a{
     padding-top:60px;
 }
 
-/* .sp{
-    width:100%; 
-    height:100vh; 
-    background-color:teal; 
-    margin:0 auto; 
-    text-align:center; 
-    font-family: arial, helvetica; 
-    font-size:30px; 
-    color:#ffffff; 
-    display:flex; 
-    align-items:center; 
-    justify-content:center;} */
 
 .quote {
     margin-bottom:15vh; 
@@ -177,7 +188,6 @@ nav div a{
     line-height:76px; 
     text-align:center; 
     overflow:hidden; 
-    /* height:100vh;  */
 }
 
 .split-line {
@@ -270,13 +280,24 @@ section {padding: 50px 0;}
 .horizontal__item {
     margin-left: 50px;
 }
+.horizontal__item:hover{
+    opacity: 0.7;
+}
+.horizontal__item .projectname{
+    position: absolute;
+    left: 5%;
+    bottom: 7%;
+    opacity: 0;
+    font-family:  'Mulish';
+}
+.horizontal__item:hover > .projectname{
+    opacity: 1;
+}
+/* .horizontal__item:hover > .cursor{
+    transform: scale(2);
 
-/* .horizontal__num {
-    font-size: 80px;
-    font-weight: 900;
-    font-stretch: condensed;
-    color: #ff98a2;
 } */
+
 
 .horizontal__item img{
     height: 60vh;
@@ -319,23 +340,15 @@ section {padding: 50px 0;}
     width: 60px;
     height: 80px;
     margin-top: 5%;
-    /* justify-content: center;
-    align-items: center; */
-    /* margin: 1e 1e; */
-    /* transform: rotete(90deg);
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
-/* .arrow.active{
-    transform: rotateX(90deg);
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
+
 
 .color{
     height: 100vh;
     width: 100vw;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     display: table-cell;
@@ -347,31 +360,29 @@ section {padding: 50px 0;}
     font-family: "Coign Pro 47 Bold";
 
 }
-
-.cursor{
-    height: 30px;
-    width:30px;
-    background-color: white;
-    border-radius: 50%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    z-index: 100000;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    transition: transform .3s ease;
+.links{
+    justify-content: space-around; 
+    display: flex;
+    margin-top: 2%;
+    /* gap: 3em; */
 
 }
-body:hover > .cursor{
-    opacity:1;
-    
+.links a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family:  'Mulish';
+    font-size: 22px;
+    color: #bd84b8;
 }
-span:hover > .cursor{
-    transform:translate(-50%,-50%) scale(2);
+.links a:hover{
+    transform: scale(0.95);
+    text-decoration: underline;
 }
-/* .button:hover{
-    transform: scale(0.5);
-} */
+.color img{
+    transform: rotate(90deg);
+}
+
+
+
 
 
